@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name : jaffle_shop
+    description: jaffles shop data source poinint to dbt_fundamentals_raw database
+    database: dbt_fundamentals_raw
+    schema: jaffle_shop
+    tables:
+      - name: customers
+        description: one rec per cus
+      - name: orders
+        description: one rec per order
+        
