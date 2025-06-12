@@ -10,4 +10,12 @@ sources:
         description: one rec per cus
       - name: orders
         description: one rec per order
+  - name : stripe
+    description:  stripe schema with payment table
+    database: dbt_fundamentals_raw
+    schema: stripe
+    tables:
+      - name : payment
+        description: payment table
+      
         
